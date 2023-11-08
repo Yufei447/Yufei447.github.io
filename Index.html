@@ -1,0 +1,395 @@
+<html>
+	<!DOCTYPE html>
+	
+	<head>
+		<!-- Add this link to include the Font Awesome library -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		
+		<style>
+			/* Custom CSS */
+			body, html {
+				margin: 0; /* Reset default margin */
+				padding: 0; /* Reset default padding */
+				font-family: 'Roboto', sans-serif; /* Apply Roboto font to the whole page */
+			}
+	
+			#header {
+				position: fixed; /* Fixed position */
+				left: 0; /* Align to the left */
+				top: 0; /* Align to the top */
+				width: 100%; /* Make the header full width */
+				z-index: 1000; /* Make sure it's on top of other elements */
+				background: #ffffff; /* Add a background color to the header */
+				padding: 5px; /* Add some padding */
+			}
+			.icons {
+				list-style: none; /* Remove list bullets */
+				margin: 0; /* Remove default margin */
+				padding: 0; /* Remove default padding */
+				text-align: center; /* Align the list to the right */
+			}
+	
+			.icons li {
+				display: inline; /* Display list items inline */
+			}
+	
+			.icons a {
+				text-decoration: none; /* Remove underline from links */
+				color: #000000; /* Set color of links */
+				padding-left: 15px; /* Add some space between icons */
+			}
+
+		</style>
+	</head>
+	<body>
+	
+	<header id="header">
+		<ul class="icons">
+			<li><a href="#aboutme" <i class="fa-solid fa-list" style="color: #000000;"></i><span class="label"></span> 1.About Me</a></li>
+			<li><a href="#interest" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 2.Interests</a></li>
+			<li><a href="#4" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 3.Experience</a></li>
+			<li><a href="#5" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 4.Projects</a></li>
+			<li><a href="https://docs.google.com/document/d/1DlRhBnwy5R3Pk-5bJUWqV2whir_oiwI8/edit?usp=sharing&ouid=106515464403565826546&rtpof=true&sd=true" <i class="fa-regular fa-flag" style="color: #000000;"></i><span class="label"></span>     Resume</a></li>
+		</ul>
+	</header>
+
+
+
+<!-- Rest of your website content goes here -->
+
+</body>
+</html>
+	<head>
+		<title>Yufei wang | Data Scientist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Yufei Wang</h1>
+							<p class="major">I am a master student who aims at finding data scientist opportunists with strong analytical and programming skills.   </p>
+							<p class="major">I have a robust foundation in computer science and statistics, and 3+ years of experience in the complete data development cycle. </p>
+							<p class ="major">With a passion for innovating and data-driven problem-solving, I have a goal-driven mindset and demonstrate high adaptability to challenges. 
+							</p>
+							<ul class="actions stacked">
+								<li><a href="https://docs.google.com/document/d/1DlRhBnwy5R3Pk-5bJUWqV2whir_oiwI8/edit?usp=sharing&ouid=106515464403565826546&rtpof=true&sd=true" class="button big wide smooth-scroll-middle">Resume</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/1.jpg" alt="" />
+							<!-- <img src="images/banner.jpg" alt="" /> -->
+						</div>
+					</section>
+
+
+				<!-- Two -->
+					<section class="banner style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="first">
+						<div id="aboutme" class="content">
+							<h2>About Me</h2>
+							<p>As a Chinese with a Bachelor's degree in Computer Science, I acquired fundamental computer knowledge such as operating systems, computer architecture, and data management during my college years. I began my programming journey in my freshman year and achieved an average academic score of 89.63%[transcript] during my college studies.</p>
+							<p>Being deeply obsessed with the digital age and its transformative impact on various industries through data utilization, I embarked on an internship at Zhilian Zhaopin, a leading online recruitment platform in China. There, I learned how to utilize huge amount of data to generate business insights. </p>
+							<p>I pursue farther education at University of Southern California, majoring applied data science. Willing to take challenges, I took many valuable courses such as optimization skills and data mining.  
+							<ul class="actions stacked">
+								<li><a href="#interest" class="button">Know More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/2.PNG" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div id="interest" class="content">
+							<h2>Field of Interests</h2>
+							<p>Driven by my keen interest in the recommendation system and its profound influence on people's lives, I learned it by myself. I learned many classical methods, including collaborative filtering, matrix factorization, as well as models emphasizing feature interactions such as Poly2 and its modified versions like FM and FFM. </p>
+							<p>With the advent of the deep learning era, AutoRec and Deep Crossing focus on representing of user and item characteristics using neural network. And NeuralCF and PNN focus more on feature interactions to enhance data representation. Wide & Deep was introduced from a business perspective and I also learned its variations like Deep & Cross and Deep FM. </p>
+							<p>The introduction of attention mechanisms in recommendation systems, starting with AFM. And Alibaba built DIN and DIEN for their e-commerce platform. <p>
+							<p>I’m thrilled about this ever-evolving field and remain dedicated to learning more. Consequently, in the summer of 2023, I undertook an internship [hyperlink] with Ping’an Science & Technology Company to develop an AI-driven recommendation assistant for insurance agents based on Large Language Model. <p>
+							<ul class="actions stacked">
+								<li><a href="#4" class="button">Know More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/3.png" alt="" />
+						</div>
+					</section>
+                
+				<!-- Four -->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div id="4" class="content">
+						<h2>AI-driven recommendation assistant</h2>
+						<p>TBD<p>
+						<ul class="actions stacked">
+							<li><a href="#interest" class="button">Know More</a></li>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/3.5.png" alt="" />
+					</div>
+				</section>
+
+				<!-- five -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div id="5" class="content">
+						<h2>Noteworthy Projects</h2>
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/CTR-Prediction" target="_blank">Click Through Rate Prediction</a></h2>
+							<li>Advertising analysis of predicting whether a mobile ad will be clicked using Wide&Deep model and its variations Deep&Cross model and DeepFM model. </li>
+							<li>The project was built using python and PyTorch and Spark SQL for big data OLAP.</li>
+							<p><p></p>
+						<ul class="icons">
+							<li><a href="https://github.com/Yufei447/CTR-Prediction" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+							
+						</ul>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/4.jpeg" alt="" />
+					</div>
+				</section>
+
+				<!-- 6 movie-->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div id="7" class="content">
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/Movie-Reccommendation-Engine-Development-based-on-Spark-ALS" target="_blank">Movie Recommendation Engine Development</a></h2>
+							<li>Movie Recommendation System based on the matrix factorization method to recommend top k movies to a user by analyzing his/her reviewing history. Additionally, the system can discover similar movies within the dataset using by utilizing the movie factor matrix and computing Euclidean and cosine distance of the movie factors.</li>
+							<li>The project was implemented by Spark ALS and Spark SQL</li>
+								<p><p>
+
+							<ul class="icons">
+							<li><a href="https://github.com/Yufei447/Movie-Reccommendation-Engine-Development-based-on-Spark-ALS" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+							
+						</ul>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/5.png" alt="" />
+					</div>
+				</section>
+
+					<!-- 7crime -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div id="8" class="content">
+							<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/LA-Crime-Analysis" target="_blank">LA Crime Analysis</a></h2>
+							<li>Spatial and time analysis of crimes for a 10-year dataset of reported crimes from LA government based on OLAP and model building.
+							<li>The project was implemented by Spark SQL, Spark Dataframe and Spark ML.</li>						
+							<p><p>
+							<ul class="icons">
+								<li><a href="https://github.com/Yufei447/LA-Crime-Analysis" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+								
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/6.png" alt="" />
+						</div>
+					</section>
+
+				<!-- 8 stock-->
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<div id="6" class="content">
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/Stock-Price-Prediction" target="_blank">Stock Price Prediction</a></h2>
+						<li>Stock price prediction based on LSTM model.</li>
+						<p><p>
+						<ul class="icons">
+							<li><a href="https://github.com/Yufei447/Stock-Price-Prediction" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+						
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/7.png" alt="" />
+					</div>
+				</section>
+
+				
+
+				
+
+				<!-- 9 -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div id="9" class="content">
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/HDFS-Emulation" target="_blank">HDFS Emulation</a></h2>
+						
+							<li>Emulating the Hadoop Distributed File System (HDFS) by self-designing its main tasks. The frontend page was implemented via Vue.js and the backend server was built using python and Flask. Firebase was used for the database to store NameNode and DataNodes. Like HDFS, the NameNode has two main sections, iNodeSection to store inumber of each file and dirSection to explore directory structure.</li>
+							<li>The system can also accept shell commands from the terminal the sockets were used for communication.</li>
+							<p><p>
+							<ul class="icons">
+							<li><a href="https://github.com/Yufei447/HDFS-Emulation" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+							<li><a href="https://www.youtube.com/watch?v=SLGoAuBmRKc" <i class="fa-brands fa-youtube" style="color: #000000;"></i><span class="label"></span> Demo</a></li>
+							
+						</ul>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/8.png" alt="" />
+					</div>
+				</section>
+
+
+				<!--gallery -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2 >Other Projects</h2>
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="https://github.com/Yufei447/Customer-Churn-Prediction" class="image">
+										<img src="images/gallery/thumbs/01.jpg" alt="" />							
+									</a>
+									<div class="caption">
+										<h3>Customer Churn Prediction</h3>
+										<p>Identify customers who are likely to churn in the future and analyze top factors that influence user retention.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="https://github.com/Yufei447/Topic-Modeling" class="image">
+										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Topic Modeling</h3>
+										<p>Cluster customer reviews into groups and discover the latent semantic structures.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="https://github.com/Yufei447/Gas-Meter-Reading-Recognition" class="image">
+										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Gas Meter Reading Recognition</h3>
+										<p>Reading recognition based on digital image processing and neural networks.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="https://github.com/Yufei447/Face-Recognition" class="image">
+										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Face Recognition</h3>
+										<p>Face recognition in real-time video streams.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								
+							</div>
+
+					</section>
+
+				<!-- Six -->
+					<!-- <section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Ipsum sed consequat</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-gem"></span>
+									<h3>Lorem</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-save"></span>
+									<h3>Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-wifi"></span>
+									<h3>Amet</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cog"></span>
+									<h3>Magna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa-paper-plane"></span>
+									<h3>Tempus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Aliquam</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-hashtag"></span>
+									<h3>Morbi</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bolt"></span>
+									<h3>Turpis</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-envelope"></span>
+									<h3>Ultrices</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-leaf"></span>
+									<h3>Risus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+							</div>
+						</div>
+					</section> -->
+
+			
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+
+								<li><a href="https://github.com/Yufei447" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span></a></li>
+							
+							</ul>
+							<p>&copy; Yufei Wang</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

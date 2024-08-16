@@ -49,7 +49,7 @@
 	<header id="header">
 		<ul class="icons">
 			<li><a href="#aboutme" <i class="fa-solid fa-list" style="color: #000000;"></i><span class="label"></span> 1.About Me</a></li>
-			<li><a href="#llm" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 2.Experience</a></li>
+			<li><a href="#interest" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 2.Experience</a></li>
 			<li><a href="#5" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 3.Projects</a></li>
 			<li><a href="#Skills" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 4.Skills</a></li>
 			<li><a href="https://drive.google.com/file/d/1GYeag055NpooXeRZYzFJAD_bhvJGA64g/view?usp=sharing" <i class="fa-regular fa-flag" style="color: #000000;"></i><span class="label"></span>     Resume</a></li>
@@ -80,9 +80,8 @@
 							<h1>Yufei Wang</h1>
 							<p class="major">I am a master student majoring in Computer Science. I have a batchelor degree in Computer Science as well.</p>
 							<p class="major">I am proficient in programming and have passion about this ever-evolving technology field. </p>
-							<p class ="major">I am a fast-paced thinker, self-motivated perfectionist. I am high adaptability to challenges. </p>
 							<!-- <ul class="actions stacked"> -->
-								<button><a href="https://drive.google.com/file/d/1GYeag055NpooXeRZYzFJAD_bhvJGA64g/view?usp=sharing">Resume</a></button>
+								<button><a href="https://drive.google.com/file/d/1OGcmDzGuR9AeuvgvD9x79ax4gUyJqpdK/view?usp=sharing">Resume</a></button>
 							<!-- </ul> -->
 						</div>
 						<div class="image">
@@ -97,8 +96,10 @@
 						<div id="aboutme" class="content">
 							<h2>About Me</h2>
 							<p>As a Chinese with a Bachelor's degree in Computer Science, I acquired fundamental computer knowledge such as operating systems, computer architecture, and data management during my college years. I began my programming journey in my freshman year and achieved an average academic score of <a href="https://drive.google.com/file/d/1j19255z4Iyerg7yC4rrLsyVT36c5YpJp/view?usp=sharing">89.63%</a> during my college studies.</p>
-							<p>Being deeply obsessed with the digital age and its transformative impact on various industries through data utilization, I embarked on an internship at Zhilian Zhaopin, a leading online recruitment platform in China. There, I learned how to utilize huge amount of data to generate business insights. </p>
-							<p>I pursue farther education at University of Southern California, majoring computer science. Willing to take challenges, I took many valuable courses such as optimization skills and data mining.  
+							<p>I pursue farther education at University of Southern California, majoring computer science. Willing to take challenges, I took many valuable courses such as artificial intelligence, optimization techniques and data mining</p>  
+							<p>Being deeply obsessed with the power of AI and LLM, I embarked 2 internships leveraging LLM to derive business values.</p>
+							
+							
 							<ul class="actions stacked">
 								<li><a href="#interest" class="button">Know More</a></li>
 							</ul>
@@ -111,11 +112,12 @@
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div id="interest" class="content">
-							<h2>Fast-paced Thinker</h2>
-							<p>I process a deep passion for the technology industry and am dedicated to continually acquiring new skills. </p>
-							<p>(1) I taught myself to pertinent concepts Large Language Models and managed to “taught” LLaMa to write code, subsequently publishing the model to Hugging Face. Additionally, I also joined the open-source group on Github to continuously test for a newly designed framework.  </p>
-							<p>(2) Amazed at recommendation system and its profound influence on people's lives, I have familiarized myself with various relevant models and implemented several projects. Last summer I undertook an <a href="#4">internship</a> at leading company in China, where I utilized LLMs to enhance the efficiency of insurance agents through personalized recommendations.<p>
-							<p>(3) My enthusiasm for robotics led me to join the robotics lab at USC. Currently, I am engaging in a project focused on synchronizing .bag files, which describe robotics motions for different cameras, to facilitate the seamless depiction of consecutive robotic movements.</p>
+							<h2>Software Engineer Internship at Feel</h2>
+							<p>Feel is a new type of social media application geared towards supporting its users’ emotional wellbeing. On Feel, users can log and track their emotions to keep a pulse on how they are feeling. I involed in the chatbot development where users can talk with for additional support. Specifically, the chatbot can act as an empathetic listening ear, ask meaningful questions, recommend resources, comfort users, etc. </p>
+							<p>I firstly started by designing rigid conditions to decide wether the bot would act as a friend or a therapist using intent analysis and sentiment analysis powered by LangChain. Then I optimzed the by function calling chatbot using tools parameter to specify additional tools or features that should be enabled or utilized during the completion (or response generation) process. </p>
+							<p>The bot can also memorize what users said a long time ago, by vectorizing the conversations and storing in the PGVector concurrently while the bot is answering the user's questions.</p>
+							<p>Suggested by my manager, I further optimized the bot using Semantic Kernel developed by Microsoft, which involved developments of plugins to lead to more efficient and responsive applications.<p>
+							<p>I also created a Python script to evaluate the chatbot's performance on the test set using the BLEU metric and GPT-4o scoring to for better hyperparameter fine-tuning and prompt engineering.</p>
 							<ul class="actions stacked">
 								<li><a href="#4" class="button">Know More</a></li>
 							</ul>
@@ -123,6 +125,7 @@
 						<!-- <div class="image"> -->
 							<img src="images/run.jpg" alt="" />
 						<!-- </div> -->
+				
 				
 				<!-- LLM -->	
 					</section>
@@ -140,6 +143,8 @@
 							<img src="images/in.png" alt="" />
 						<!-- </div> -->
 					</section>
+
+					
                 
 				<!-- Four -->
 				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
@@ -159,11 +164,59 @@
 					</div>
 				</section>
 
+
+
+
+
 				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 					<div id="5" class="content">
 						<h2>Noteworthy Projects</h2>
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/goProduct" target="_blank">E-commerce product flash sale system based on Golang</a></h2>
+							<li>The characteristics of the flash sale system is that a lot of people would flocked in trying to place an order at the same time. So the system must have high concurrency to handle large traffic and also data consistency is really important.</li>
+							<li>The basic architecture is that when uservisit the page and send requests to web server, and the server would query data from the database. After getting the data, the web server would render the page to user, which involves product, user and order management. However, there are several problems with this architecture:</li>
+							<li>1. Web server would need to handle lots of request and guarantee secure access, which would put a lot of stress to the web server. 2. Querying the database for every user request results in low performance. 3. Simply interacting between server and database during high traffic may not ensure accurate inventory management, potentially leading to overselling products beyond available quantities.</li>
+							<li>Thus I optimized the system's concurrency using several techniques: Deployed the front-end page using AWS CloudFront for CDN optimization.</li>
+							<li>Designed a distributed authentication module to filter traffic effectively using AES-encrypted cookies. I also implemented a consistent hashing algorithm to store user last login times, controlling access rates.</li>
+							<li>Utilized RabbitMQ to manage database access flow and process messages asynchronously.</li>
+							<li>Created a module that achieved over 15k QPS on a single machine deployed on AWS EC2.</li>
+							<li>Utilizing these techniques, the system can operate concurrently and handle high loads effectively</li>
+							<p><p></p>
+						<ul class="icons">
+							<li><a href="https://github.com/Yufei447/goProduct" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+							
+						</ul>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/shop.jpg" alt="" />
+					</div>
+				</section>
+
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<div id="9" class="content">
+						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/Online-Dating-App" target="_blank">Online Dating Web Application</a></h2>
+							<li>I developed an online dating website where you are free to make friends and share posts. You can visit it <a href="https://www.onlinedatingapp.online/">here</a>, but note that I will charge for every messages you sent. It's hard to find real love afterall:)</li>
+							<li>I created features for sending smile, friends requests and messaging using Node.js, Bootstrap and MongoDB. And I used Stripe Checkout handling messages charges.</li>
+							<li>I also implemented post sharing with commenting and thumbs-up functionality, storing images in AWS S3 using AJAX.</li>
+							<li>When a new user is registered, an automatic welcome messages will be sent using socket and message notifications will be created at the header of the website using jQuery.</li>
+							<p><p>
+							<ul class="icons">
+							<li><a href="https://www.onlinedatingapp.online/" <i class="fab fa-github" style="color: #000000;"></i><span class="label"></span> Detail</a></li>
+							
+						</ul>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/love.jpeg" alt="" />
+					</div>
+				</section>
+
+				
+
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div id="5" class="content">
 						<h2 style="font-size: 32px; font-weight: bold;"><a href="https://github.com/Yufei447/Youtube-clone" target="_blank">YouTube Clone</a></h2>
-							<li>Built a simplified <a href="https://yt-web-client-hhg4frsdqa-uc.a.run.app/">website</a> for users to view videos and upload videos when authenticated with scalability. </li>
+							<li>Built a website for users to view videos and upload videos when authenticated with scalability. </li>
 							<li>Created a video processing service to transcode videos using Express, TypeScipt and FFmpeg. Stored videos in Google Cloud
 								Storage and associated metadata in Cloud Firestore. Used Cloud Pub/Sub for message communization.</li>
 							<li>Built the web client with React and Next.js; Showed videos by retrieving URLs from buckets, leveraging Firebase Functions.</li>
@@ -385,7 +438,7 @@
 								<section>
 									<span class="icon style2 major fa-gem"></span>
 									<h3>Programming language</h3>
-									<p>C, C++, Java</p>
+									<p>Golang, C++, Java, C</p>
 									<p>Python, SQL</p>
 									<p>HTML/CSS, Javascript, TypeScipt</p>
 								</section>
@@ -394,6 +447,7 @@
 									<h3>Front-end / Back-end</h3>
 									<p>React, Redux, Vue, Next.js</p>
 									<p>Node.js, Express, Flask</p>
+									<p>FastAPI, Spring</p>
 									<p>Socket, Websocket</p>
 								</section>
 								<section>
@@ -520,7 +574,7 @@
 							<ul class="icons">
 
 								<li><a href="https://github.com/Yufei447"><i class="fab fa-github" style="color: #000000;"></i><span class="label"></span></a></li>
-								<li><a href="https://www.linkedin.com/in/yufeiwang-data/"><i class="fab fa-linkedin" style="color: #0077B5;"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/yufeiwang-usc/"><i class="fab fa-linkedin" style="color: #0077B5;"></i></a></li>
 							
 							</ul>
 							<p>&copy; Yufei Wang</p>

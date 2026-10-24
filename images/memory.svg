@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1600" width="500" height="1600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2735"/><stop offset="1" stop-color="#090a0f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fd1ff" stop-opacity="0.85"/><stop offset="1" stop-color="#7fd1ff" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5fa8d3"/>
+    </marker>
+  </defs>
+  <rect width="500" height="1600" fill="url(#bg)"/>
+  <g fill="#5fa8d3" fill-opacity="0.25">
+    <circle cx="70" cy="120" r="3"/><circle cx="420" cy="90" r="2"/><circle cx="450" cy="1480" r="3"/><circle cx="60" cy="1500" r="2"/>
+    <circle cx="110" cy="1380" r="2"/><circle cx="400" cy="200" r="2"/><circle cx="80" cy="640" r="2"/><circle cx="440" cy="760" r="2"/>
+  </g>
+
+  <!-- source cards -->
+  <g font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle">
+    <g fill="#e8f4ff" stroke="#5fa8d3" stroke-width="2.5">
+      <rect x="80"  y="300" width="150" height="58" rx="10"/>
+      <rect x="270" y="300" width="150" height="58" rx="10"/>
+      <rect x="80"  y="385" width="150" height="58" rx="10"/>
+      <rect x="270" y="385" width="150" height="58" rx="10"/>
+      <rect x="175" y="470" width="150" height="58" rx="10"/>
+    </g>
+    <g fill="#1b2735" font-weight="500">
+      <text x="155" y="335">Chats</text>
+      <text x="345" y="335">Documents</text>
+      <text x="155" y="420">Email</text>
+      <text x="345" y="420">Meetings</text>
+      <text x="250" y="505">App events</text>
+    </g>
+  </g>
+
+  <!-- flows into the store -->
+  <g stroke="#5fa8d3" stroke-opacity="0.7" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M120 358 C 90 520, 150 600, 215 660"/>
+    <path d="M380 358 C 410 520, 350 600, 285 660"/>
+    <path d="M140 443 C 130 540, 190 600, 232 662"/>
+    <path d="M360 443 C 370 540, 310 600, 268 662"/>
+    <path d="M250 528 C 250 580, 250 610, 250 662"/>
+  </g>
+
+  <!-- memory store -->
+  <circle cx="250" cy="790" r="170" fill="url(#glow)"/>
+  <g fill="#e8f4ff" stroke="#5fa8d3" stroke-width="3">
+    <path d="M130 700 a120 28 0 0 0 240 0 a120 28 0 0 0 -240 0 v180 a120 28 0 0 0 240 0 v-180"/>
+    <ellipse cx="250" cy="700" rx="120" ry="28"/>
+  </g>
+  <g font-family="Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#1b2735">
+    <text x="250" y="780" font-size="21" font-weight="500">Memory store</text>
+    <text x="250" y="810" font-size="13">embeddings &#183; cue anchors</text>
+    <text x="250" y="832" font-size="13">entity facets &#183; BM25 index</text>
+  </g>
+
+  <!-- retrieval agent -->
+  <g stroke="#5fa8d3" stroke-opacity="0.8" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M250 910 L250 975"/>
+    <path d="M250 1055 L250 1120"/>
+  </g>
+  <g fill="#e8f4ff" stroke="#5fa8d3" stroke-width="2.5">
+    <rect x="95" y="978" width="310" height="76" rx="12"/>
+  </g>
+  <g font-family="Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#1b2735">
+    <text x="250" y="1010" font-size="18" font-weight="500">Agentic retrieval</text>
+    <text x="250" y="1035" font-size="13">plan &#183; hybrid search &#183; rerank &#183; verify</text>
+  </g>
+
+  <!-- answer card -->
+  <g fill="#e8f4ff" stroke="#5fa8d3" stroke-width="2.5">
+    <rect x="80" y="1122" width="340" height="118" rx="12"/>
+  </g>
+  <g fill="#5fa8d3" fill-opacity="0.5">
+    <rect x="105" y="1152" width="220" height="9" rx="4"/>
+    <rect x="105" y="1176" width="265" height="9" rx="4"/>
+    <rect x="105" y="1200" width="180" height="9" rx="4"/>
+  </g>
+  <g fill="#ffd166" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500">
+    <text x="335" y="1161">[1]</text><text x="380" y="1185">[2]</text><text x="295" y="1209">[3]</text>
+  </g>
+  <text x="250" y="1285" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#ffd166" text-anchor="middle">Answers with cited evidence</text>
+</svg>

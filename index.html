@@ -49,10 +49,10 @@
 	<header id="header">
 		<ul class="icons">
 			<li><a href="#aboutme" <i class="fa-solid fa-list" style="color: #000000;"></i><span class="label"></span> 1.About Me</a></li>
-			<li><a href="#interest" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 2.Experience</a></li>
+			<li><a href="#experience" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 2.Experience</a></li>
 			<li><a href="#5" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 3.Projects</a></li>
 			<li><a href="#Skills" <i class="fa-solid fa-lit" style="color: #000000;"></i><span class="label"></span> 4.Skills</a></li>
-			<li><a href="https://drive.google.com/file/d/1OGcmDzGuR9AeuvgvD9x79ax4gUyJqpdK/view?usp=sharing" <i class="fa-regular fa-flag" style="color: #000000;"></i><span class="label"></span>     Resume</a></li>
+			<li><a href="assets/resume/Yufei_Wang_resume.pdf" <i class="fa-regular fa-flag" style="color: #000000;"></i><span class="label"></span>     Resume</a></li>
 		</ul>
 	</header>
 
@@ -78,10 +78,10 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Yufei Wang</h1>
-							<p class="major">I am a master student majoring in Computer Science. I have a batchelor degree in Computer Science as well.</p>
-							<p class="major">I am proficient in programming and have passion about this ever-evolving technology field. </p>
+							<p class="major">I am a Software Engineer at Causal Dynamics Lab in Seattle, building LLM agent systems: enterprise memory and retrieval, autonomous root cause analysis, and the evaluation pipelines behind them.</p>
+							<p class="major">I hold a Master of Science in Applied Data Science from the University of Southern California and a Bachelor of Engineering in Computer Science from Qingdao University.</p>
 							<!-- <ul class="actions stacked"> -->
-								<button><a href="https://drive.google.com/file/d/1OGcmDzGuR9AeuvgvD9x79ax4gUyJqpdK/view?usp=sharing">Resume</a></button>
+								<button><a href="assets/resume/Yufei_Wang_resume.pdf">Resume</a></button>
 							<!-- </ul> -->
 						</div>
 						<div class="image">
@@ -96,12 +96,12 @@
 						<div id="aboutme" class="content">
 							<h2>About Me</h2>
 							<p>As a Chinese with a Bachelor's degree in Computer Science, I acquired fundamental computer knowledge such as operating systems, computer architecture, and data management during my college years. I began my programming journey in my freshman year and achieved an average academic score of <a href="https://drive.google.com/file/d/1j19255z4Iyerg7yC4rrLsyVT36c5YpJp/view?usp=sharing">89.63%</a> during my college studies.</p>
-							<p>I pursue farther education at University of Southern California, majoring computer science. Willing to take challenges, I took many valuable courses such as artificial intelligence, optimization techniques and data mining</p>  
-							<p>Being deeply obsessed with the power of AI and LLM, I embarked 2 internships leveraging LLM to derive business values.</p>
+							<p>I pursued further education at the University of Southern California, graduating in December 2024 with a Master of Science in Applied Data Science (GPA 3.9/4.0). Willing to take challenges, I took many valuable courses such as artificial intelligence, optimization techniques, deep learning and data mining.</p>  
+							<p>Being deeply obsessed with the power of AI and LLMs, I completed two internships leveraging LLMs to derive business value, and since February 2025 I have been a Software Engineer at Causal Dynamics Lab, where I build production LLM agent systems. Our enterprise memory and retrieval service currently ranks #1 on the <a href="https://huggingface.co/spaces/onyx-dot-app/EnterpriseRAG-Bench-Leaderboard" target="_blank">EnterpriseRAG-Bench leaderboard</a>.</p>
 							
 							
 							<ul class="actions stacked">
-								<li><a href="#interest" class="button">Know More</a></li>
+								<li><a href="#experience" class="button">Know More</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -109,10 +109,91 @@
 						</div>
 					</section>
 
+				<!-- Work experience: Causal Dynamics Lab -->
+					<section class="wrapper style1 align-center">
+						<div id="experience" class="inner">
+							<h2>Work Experience</h2>
+							<h3 style="margin-bottom: 0.25rem;">Software Engineer &middot; Causal Dynamics Lab</h3>
+							<p style="margin-bottom: 1rem;">Seattle, WA &nbsp;|&nbsp; Feb 2025 &ndash; Present</p>
+							<p>I build LLM agent systems end to end: memory and retrieval services for enterprise data, autonomous agents that diagnose production incidents, and the harnesses, evaluation pipelines and infrastructure that make them reliable. The three projects below are the main things I have worked on.</p>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div id="memory" class="content">
+							<h2>Enterprise Agent Memory, Retrieval &amp; Agent Harness</h2>
+							<p style="margin-bottom: 0.5rem;"><strong>Mar 2026 &ndash; Present</strong></p>
+							<p>Built a scalable memory service that turns massive, heterogeneous enterprise histories (chats, documents, email, meetings, app events) into a searchable memory store, and answers questions with cited evidence through agentic retrieval. The system reached <strong>#1 on the <a href="https://huggingface.co/spaces/onyx-dot-app/EnterpriseRAG-Bench-Leaderboard" target="_blank">EnterpriseRAG-Bench leaderboard</a></strong>.</p>
+							<ul>
+								<li>Built a concurrent LLM-based memory extraction pipeline supporting a 512k-document corpus, generating dual-resolution memories with embeddings, cue anchors and entity facets stored in PostgreSQL/pgvector; achieved 3x higher throughput through buffered bulk writes, embedding pre-warm and deferred deletes.</li>
+								<li>Implemented an offline memory lifecycle with union-find clustering, cross-batch reconciliation, temporal fact supersession and access-decay scoring; optimized similarity computation with blocked incremental scans, reducing memory usage by 82% (60 GB &rarr; 11 GB) and the merge-matrix footprint by 99% (25 GB &rarr; 256 MB), while improving retrieval accuracy from 67% to 70% and cutting median latency by 19%.</li>
+								<li>Integrated LLM-generated predictive cues and a hybrid cognitive retriever, improving LoCoMo-Plus accuracy from 46% to 73% and session recall from 30% to 99%.</li>
+								<li>Rearchitected a policy-driven retriever into a plan-based, multi-channel pipeline with LLM query planning, HyDE, hybrid BM25/dense/cue retrieval fused via RRF, and parallel sharded LLM reranking to mitigate position bias; improved LoCoMo accuracy from 83.8% to 93.3% and EnterpriseRAG-Bench from 70.1% to 83.2%.</li>
+								<li>Replaced in-memory BM25 with a disk-based Tantivy search engine featuring crash-safe synchronization, leader election and incremental indexing; reduced index storage by 98% (79 GB &rarr; 1.5 GB) and accelerated index builds by 2.7x (4,146 s &rarr; 1,557 s).</li>
+								<li>Built a tool-use retrieval agent with candidate adjudication, verification and per-document enrichment, improving EnterpriseRAG-Bench from 83.2% to 90.91% and BEAM-10M accuracy from 55% to 71%.</li>
+								<li>Built an evaluation stack with four configurable quality&ndash;latency tiers, multi-provider LLM routing via LiteLLM, and token/cost tracking using Python and FastAPI.</li>
+								<li>Developed an asynchronous Python/FastAPI and PydanticAI agent harness for an Electron desktop app, integrating MCP tools, dynamic skills, human-in-the-loop approvals and real-time streaming for auditable agent workflows.</li>
+								<li>Developed "My Day", integrating Gmail, Slack, Google Workspace, Jira and Calendar for LLM-based task triage and reply drafting; built an ontology-driven knowledge system with typed relationships, temporal reconciliation and incremental updates for personalized agent context.</li>
+							</ul>
+							<p><em>Technologies:</em> Python, FastAPI, PydanticAI, LLM agents, RAG, PostgreSQL/pgvector, Tantivy, LiteLLM, MCP, Electron.</p>
+							<ul class="actions stacked">
+								<li><a href="#rca" class="button">Next Project</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/3.5.png" alt="Illustration of a human hand and a robotic hand reaching toward a glowing interface" />
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div id="rca" class="content">
+							<h2>AI-Powered Root Cause Analysis (RCA) Agent</h2>
+							<p style="margin-bottom: 0.5rem;"><strong>Apr 2025 &ndash; Mar 2026</strong></p>
+							<p>Developed an autonomous AI agent that diagnoses production incidents by correlating logs, Kubernetes/cloud configurations, metrics and deployment history across distributed systems.</p>
+							<ul>
+								<li>Designed and implemented a multi-stage RCA agent (Python, OpenAI function calling, ReAct) that normalizes alerts, compresses raw logs into error templates via two-stage grouping (deterministic exact-match + LLM semantic consolidation), launches three parallel investigations from the top-3 candidate errors and ranks the results; iterative tool use spans Kubernetes config/secrets, GCP resource metadata, deployment history and metrics. Raised the mean evaluation score from 56% to 91% on 13 synthetic incident scenarios.</li>
+								<li>Architected an event-driven incident pipeline (Go, Python, RabbitMQ, PostgreSQL, Docker) that ingests PagerDuty v3 webhooks with HMAC signature verification, applies rule-based filtering (service allow-list, time window, urgency), links incidents to workloads and dispatches investigations to a Python RCA worker; hardened it with manual acks, bounded retries with dead-letter handling, context-aware RabbitMQ reconnection, graceful shutdown, thread-pool execution that keeps the asyncio event loop and heartbeats unblocked, and recovery of pending investigations across restarts.</li>
+								<li>Built a provider-pluggable log retrieval and dependency layer: an Elasticsearch/OpenSearch connector with multi-host failover, exponential backoff honoring Retry-After and configurable timeouts; LLM-driven log-schema discovery (iterative sampling with a diversity score) that identifies level/error/message fields per workload; severity-aware filtering built from index mappings (keyword vs. text) and an error taxonomy; and structured extraction and classification of cloud dependencies (databases, queues, SaaS APIs) from Kubernetes env vars, ConfigMaps, Secrets and volume mounts.</li>
+								<li>Developed a runbook (SOP) execution framework on Semantic Kernel, OpenAI and Pydantic that parses Markdown runbooks into validated atomic plans with dependencies and conditional branches and executes them either as structured plans (LLM parameter preparation, SK-evaluated conditions) or through an autonomous function-calling agent that treats the runbook as guidance; integrated LLM-generated Kubernetes diagnostics (heap/thread dumps) and a threshold-free time-series anomaly detector (Z-score against weekday-aware 1d/7d/14d baselines, STL decomposition) that seeds every investigation with breach windows.</li>
+								<li>Extended the agent with a drop-in skills architecture (SKILL.md playbooks discovered at runtime and executed through a shell tool), contributing skills for Kubernetes dependency/multi-workload investigation, workload configuration extraction, Prometheus/PromQL diagnostics, cloud dependency classification, alert validation (raised scores from 0.3 to 0.95 on service-port misconfiguration cases) and auto-generated repository knowledge bases from OpenDeepWiki documentation; raised the mean score on 32 test scenarios from 0.34 to 0.9.</li>
+								<li>Built an automated evaluation pipeline on Microsoft AIOpsLab, GKE, Chaos Mesh and OpenTelemetry that deploys microservice benchmarks (SocialNetwork, HotelReservation, AstronomyShop), injects faults, generates load, collects telemetry, runs the agent and scores it with an LLM judge against ground truth; maintained a 45-scenario catalog including 13 self-authored cloud-database, credential, third-party-API and network failure cases, and fixed fault-injection reliability (Chaos Mesh authorization webhook, stale-PV simulation, stale-result reuse).</li>
+							</ul>
+							<p><em>Technologies:</em> Python, Go, OpenAI, Azure OpenAI, Semantic Kernel, ReAct, asyncio, Pydantic, RabbitMQ, PostgreSQL, Elasticsearch/OpenSearch, Kubernetes, GKE, Prometheus, OpenTelemetry, Chaos Mesh, AIOpsLab, Docker, PagerDuty.</p>
+							<ul class="actions stacked">
+								<li><a href="#security" class="button">Next Project</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/fast-paced.jpg" alt="Long-exposure photo of a cyclist moving quickly through city lights" />
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div id="security" class="content">
+							<h2>AI Security Assistants &amp; Cloud Infrastructure Intelligence</h2>
+							<p style="margin-bottom: 0.5rem;"><strong>Feb 2025 &ndash; Sep 2025</strong></p>
+							<p>Developed cloud infrastructure AI assistants powered by digital-twin knowledge graphs to support security analysis, compliance verification and infrastructure impact simulation.</p>
+							<ul>
+								<li>Developed multi-turn AI assistants using Go, OpenAI, WebSocket, FalkorDB and Milvus, implementing persistent conversation memory, context-window management, streaming responses and graph-grounded retrieval for cloud infrastructure analysis.</li>
+								<li>Built a Text-to-Cypher retrieval pipeline combining LLM-generated graph queries, vector-based query caching, schema-aware prompting and read-only query validation to enable targeted infrastructure knowledge retrieval.</li>
+								<li>Implemented a compliance policy management system using Go and PostgreSQL, supporting custom policies, configurable severity levels, and PCI DSS, NIST 800-53 and SOC 2 mappings to dynamically guide LLM-based Terraform impact analysis.</li>
+								<li>Developed an automated LLM evaluation platform using Python, RAGAS, Arize Phoenix and FastAPI, implementing semantic similarity and hallucination detection; integrated scheduled regression evaluations into GitHub Actions CI/CD workflows to monitor agent quality across releases.</li>
+							</ul>
+							<p><em>Technologies:</em> Go, Python, OpenAI, FalkorDB, Cypher, Milvus, PostgreSQL, FastAPI, RAGAS, Arize Phoenix, Terraform, Docker, GitHub Actions.</p>
+							<ul class="actions stacked">
+								<li><a href="#interest" class="button">Earlier Experience</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/graph.svg" alt="Illustration of a cloud infrastructure knowledge graph with compliance frameworks" />
+						</div>
+					</section>
+
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div id="interest" class="content">
 							<h2>Software Engineer Internship at Feel</h2>
+							<p style="margin-bottom: 0.5rem;"><strong>Earlier experience</strong></p>
 							<p>Feel is a new type of social media application geared towards supporting its users’ emotional wellbeing. On Feel, users can log and track their emotions to keep a pulse on how they are feeling. I involed in the chatbot development where users can talk with for additional support. Specifically, the chatbot can act as an empathetic listening ear, ask meaningful questions, recommend resources, comfort users, etc. </p>
 							<p>I firstly started by designing rigid conditions to decide wether the bot would act as a friend or a therapist using intent analysis and sentiment analysis powered by LangChain. Then I optimzed the by function calling chatbot using tools parameter to specify additional tools or features that should be enabled or utilized during the completion (or response generation) process. </p>
 							<p>The bot can also memorize what users said a long time ago, by vectorizing the conversations and storing in the PGVector concurrently while the bot is answering the user's questions.</p>
